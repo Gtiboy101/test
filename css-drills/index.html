@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" context="width=device-width,initial-scale=1.0">
+<style>
+.center{
+width:500px;
+margin:0 auto;
+}
+
+.outer{
+position: relative;
+color:#cd2c2c;
+height:200px;
+width:200px;
+margin:30px;
+padding:15px;
+border:2px solid black;
+background-color: chocolate;
+}
+.inner{
+position:absolute;
+color:pink;
+height:100px;
+width:100px;
+top:50%;
+transform:translate(50%, -50%);
+border:1px solid black;
+background-color: green;
+}
+.rotate{
+  height: 100px;
+  width: 200px;
+  background-color: red;
+  rotate: 30deg;
+  margin:0 auto;
+
+}
+ .big-scale{
+  height: 200px;
+  width: 200px;
+  background-color: red;
+  scale: 2;
+  position:absolute;
+  right:0;
+  
+}
+.small-scale{
+  height: 80px;
+  width: 80px;
+  background-color: red;
+  scale: 1;
+  margin:0 auto;
+  margin-top: 150px;
+}
+.skew:hover{
+transform:skew(20deg,10deg);
+width: 300px;
+  height: 200px;
+  background-color: yellow;
+  border: 1px solid black;
+}
+.hover:hover{
+background-color: rgb(32, 49, 229);
+width:150px;
+height:70px;
+
+}
+.text-left{
+text-align: left;
+background-color:papayawhip;
+}
+.text-right{
+text-align: right;
+background-color: peru;
+}
+.text-center{
+text-align: center;
+background-color: mistyrose;
+}
+.text-justify{
+ text-align: justify; 
+ background-color: aliceblue;
+}
+</style>
+</head>
+<body>
+
+<div class="text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+
+<div class="text-right">Vivamus vitae neque condimentum, luctus nibh vel, efficitur mi. </div>
+
+<div class="text-center">Suspendisse ut auctor erat, sed tristique ligula.</div>
+
+<div class="text-justify">Cras accumsan, sem tincidunt dignissim mollis,</div>
+
+<div class="outer">
+<div class="inner">Etiam ultrices iaculis dui, ut congue massa lobortis in.</div>
+</div>
+
+<div class="skew"><a href="https://www.lipsum.com/">Etiam auctor, lorem a viverra convallis, orci magna dictum risus,</a></div>
+
+<div class="rotate">Vestibulum nec pretium est. Nam ligula ex, sodales eu tincidunt ut, aliquam venenatis augue.</div>
+<div class="big-scale">Proin in turpis a turpis pulvinar pharetra.</div>
+
+<div class="small-scale">Suspendisse imperdiet mattis porttitor.</div>
+
+<div class="hover">Suspendisse eget quam id ante dictum pharetra nec consectetur ante.</div>
+
+</body>
+</html>
