@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>My Website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+    </head>
+    <style>
+        .mock-logo {
+          padding: 20px;
+          border-radius: 50%;
+          background:oklch(0.586 0.253 17.585) ;
+        }
+        navbar{
+            align-items: center; 
+            justify-content:space-between;
+            display:flex;
+            padding: 12px;
+            background-color: blue;
+        }
+        button{
+            padding: 6px 12px;
+            border-radius: 15px;
+            color: #ccfbf1;
+            background: #d97706;
+            transition: background .15s ease-in;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            cursor: pointer;
+        }
+       .button-group {
+           display: flex;
+           gap: 12px;
+           list-style-type: none;
+           padding: 0;
+        }
+        .button-group a {
+           text-decoration: none;
+         }
+         .button-group li {
+            display: inline-block;
+         }
+         button:hover {
+            background: #50a8f0;
+        }
+
+        button:active {
+            background: #010101;
+        }
+
+</style>   
+<body>
+<navbar>
+<div class="mock-logo"></div>
+<ul class="button-group">
+<li><a href="#"><button></button> button1</button></a></li>
+<li><a href="#"><button></button>button2</button></a></li>
+</ul>
+</div>
+</navbar>
+<script src="index.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
