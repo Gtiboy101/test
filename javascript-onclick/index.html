@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+   <script>
+    function alertMessageiHope(p1,p2){
+       alert('Please stay i swear im interesting')
+    }
+       function changesContextFr(p1,p2){
+       const MyParagraph=document.getElementById('my-paragraph')
+       MyParagraph.innerHTML='test'
+       }
+    
+   </script>
+</head>
+
+<body class=" flexflex-col gap-y-12 p-30">
+    <button
+    onclick="alertMessageiHope()"
+                class=" bg-sky-400 py-4 px-6 rounded-md hover:bg-sky-200 active:bg-sky-300 transition-all cursor-pointer shadow-md border-0">Button
+                1 </button>
+    <button
+                onclick="changesContextFr()"
+                class=" bg-sky-400 py-4 px-6 rounded-md hover:bg-sky-200 active:bg-sky-300 transition-all cursor-pointer shadow-md border-0">Button
+                2</button>
+  <p class="p-15 bg-stone-100 mt-12 "id="my-paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos, facere? Incidunt quod inventore ea nisi, ipsam, esse, illo nesciunt id aut exercitationem debitis impedit amet numquam magnam? Quos, consectetur voluptatem.</p>
+</body>
+
+</html>
