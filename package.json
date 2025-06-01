@@ -1,9 +1,14 @@
 {
   "devDependencies": {
+    "@types/babel__core": "^7.20.5",
+    "@types/babel__generator": "^7.27.0",
+    "@types/babel__template": "^7.4.4",
+    "@types/babel__traverse": "^7.20.7",
     "prettier": "^3.5.3"
   },
   "dependencies": {
     "photoswipe": "^5.4.4",
+    "react-scripts": "^3.0.1",
     "vite": "^6.2.6"
   }
 }

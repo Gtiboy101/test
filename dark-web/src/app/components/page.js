@@ -1,5 +1,5 @@
 
-import SimpleGallery from './components/SimpleGallery'; // Update the path to the correct location
+import SimpleGallery from './SimpleGallery'; // Update the path to the correct location
 
 const images = [
     {
