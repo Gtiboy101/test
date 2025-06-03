@@ -1,7 +1,7 @@
 "use client";
 import React from 'react';
 import Header from './Header';
-
+import Footer from './Footer';
 const Payment = () => (
 	<>
 		<Header />
@@ -22,24 +22,38 @@ const Payment = () => (
 				• E-wallets – Some digital wallets offer partial anonymity by shielding personal details from merchants.<br />
 				• Cash-by-mail – In rare cases, some vendors accept physical cash sent through the mail for purchases.<br />
 				<br />
-				For more details or to arrange a custom payment, please contact our support team.
+				For more details or to arrange a custom payment, please contact us via mail.
 			</div>
 			<div className="service-oval" style={{ marginTop: '1.5rem' }}>
-				Cash-by-mail<br />
-				Send cash to:<br />
-				<span style={{ color: '#6c59e2' }}>123 Shadow Lane, Suite 404, Nowhere City, XX 00000</span>
-			</div>
+                <span style={{ color: '#fff' }}>Cash-by-mail</span><br />
+                <span style={{ color: '#fff' }}>Send cash to:</span><br />
+                <span style={{ color: '#6c59e2' }}>123 Shadow Lane, Suite 404, Nowhere City, XX 00000</span>
+            </div>
 			<div className="service-oval">
-				Cryptocurrency<br />
-				Pay with Monero (XMR) or Bitcoin (BTC):<br />
-				<a href="https://fake-crypto-transfer.example.com" target="_blank" rel="noopener noreferrer" style={{ color: '#6c59e2', textDecoration: 'underline' }}>
+				<span style={{ color: '#fff' }}>
+					Cryptocurrency<br />
+					Pay with Monero (XMR) or Bitcoin (BTC):<br />
+				</span>
+				<a
+					href="https://fake-crypto-transfer.example.com"
+					target="_blank"
+					rel="noopener noreferrer"
+					style={{ color: '#6c59e2', textDecoration: 'underline' }}
+				>
 					Go to Crypto Transfer Portal
 				</a>
 			</div>
 			<div className="service-oval">
-				E-Wallet<br />
-				Use our secure e-wallet system:<br />
-				<a href="https://fake-ewallet.example.com" target="_blank" rel="noopener noreferrer" style={{ color: '#6c59e2', textDecoration: 'underline' }}>
+				<span style={{ color: '#fff' }}>
+					E-Wallet<br />
+					Use our secure e-wallet system:<br />
+				</span>
+				<a
+					href="https://fake-ewallet.example.com"
+					target="_blank"
+					rel="noopener noreferrer"
+					style={{ color: '#6c59e2', textDecoration: 'underline' }}
+				>
 					Access E-Wallet Payment
 				</a>
 			</div>
@@ -58,7 +72,9 @@ const Payment = () => (
 				</a>
 			</div>
 		</main>
+        <Footer />
 	</>
+
 );
 
 export default Payment;

@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from 'react';
 import Header from './Header';
+import Footer from './Footer';
 
 const services = [
 	{
@@ -61,6 +62,7 @@ const Services = () => {
 							))}
 						</ul>
 					</main>
+                    <Footer />
 				</div>
 			</>
 		);

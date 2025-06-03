@@ -203,9 +203,7 @@ main {
   color: #fff;
   box-shadow: 0 0 12px #6c59e2;
 }
-.payment-bg .service-oval strong {
-  color: #6c59e2;
-}
+
 
 /* FAKE ADS (used on Payment) */
 .fake-ad {
