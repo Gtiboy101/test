@@ -5,7 +5,7 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   background: #071d2b;
-  overflow-x: hidden;
+
 }
 
 /* Glitch effect (used on index) */
@@ -87,7 +87,10 @@ h1 {
 /* SERVICES PAGE */
 .services-header-title{
   color: #59459f;
-background:black;
+background:#000000;
+margin-top:-250px;
+border-radius:100px;
+padding:16px 32px;
 }
 .services-bg {
   background: url('https://th.bing.com/th/id/R.8b0219bd4460b7a6ee2b1abb76e7b274?rik=yyPzPwjaH%2bshVg&riu=http%3a%2f%2fcdn.wallpapersafari.com%2f5%2f72%2fYzmGEX.jpg&ehk=piM%2f%2f3IfHqfdSZF8dLb2rKtut1gS1zUWETjRLzEhhgo%3d&risl=&pid=ImgRaw&r=0') no-repeat center center fixed;
@@ -151,7 +154,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+ justify-content: center;
   min-height: 80vh;
   margin-top: 120px;
 }
@@ -161,6 +164,10 @@ main {
 .payment-bg {
   background: linear-gradient(135deg, #0f2027 0%, #2c5364 100%);
   min-height: 100vh;
+}
+.payment-main{
+  margin-top:60px;
+ padding-bottom:80px;
 }
 .header {
   padding: 25px 20px;
