@@ -1,7 +1,11 @@
-function Footer() {
-  return (
-    <footer className="sticky bottom-0 p-12 bg-indigo-50 text-center">
-      ❤️ ❤️ Created with love by CSCI 31 Students ❤️ ❤️
+import React from 'react';
+
+const Footer = () => (
+  <footer className="footer py-4 text-center text-gray-400">
+    <div>
+      &copy; {new Date().getFullYear()} Shadow Protocol. All rights reserved.
+    </div>
   </footer>
-  );
-}
+);
+
+export default Footer;

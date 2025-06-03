@@ -1,0 +1,254 @@
+/* GLOBAL STYLES */
+body {
+  position: relative;
+  min-height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #071d2b;
+  overflow-x: hidden;
+}
+
+/* Glitch effect (used on index) */
+.glitch-bg {
+  position: relative;
+  min-height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #071d2b;
+  overflow-x: hidden;
+}
+.glitch-bg::before,
+.glitch-bg::after {
+  content: '';
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url('https://c4.wallpaperflare.com/wallpaper/793/897/77/anonymous-wallpaper-preview.jpg') no-repeat center center;
+  background-size: cover;
+  opacity: 1;
+  pointer-events: none;
+  z-index: -1;
+}
+.glitch-bg::before {
+  filter: blur(1px) brightness(1.1);
+  mix-blend-mode: lighten;
+  animation: glitch-bg-before 2s infinite linear alternate;
+}
+.glitch-bg::after {
+  filter: blur(2px) brightness(0.9);
+  mix-blend-mode: lighten;
+  animation: glitch-bg-after 1.7s infinite linear alternate-reverse;
+}
+@keyframes glitch-bg-before {
+  0%, 100% { transform: translate(0,0) scale(1);}
+  10% { transform: translate(-2px, 2px) scale(1.01);}
+  20% { transform: translate(2px, -2px) scale(0.99);}
+  30% { transform: translate(-1px, 1px) scale(1.02);}
+  40% { transform: translate(3px, -1px) scale(1);}
+  50% { transform: translate(0,0) scale(1);}
+  60% { transform: translate(-3px, 2px) scale(1.03);}
+  70% { transform: translate(2px, -3px) scale(0.97);}
+  80% { transform: translate(-2px, 2px) scale(1.01);}
+  90% { transform: translate(0,0) scale(1);}
+}
+@keyframes glitch-bg-after {
+  0%, 100% { transform: translate(0,0) scale(1);}
+  15% { transform: translate(2px, -2px) scale(1.01);}
+  25% { transform: translate(-2px, 2px) scale(0.99);}
+  35% { transform: translate(1px, -1px) scale(1.02);}
+  45% { transform: translate(-3px, 1px) scale(1);}
+  55% { transform: translate(0,0) scale(1);}
+  65% { transform: translate(3px, -2px) scale(1.03);}
+  75% { transform: translate(-2px, 3px) scale(0.97);}
+  85% { transform: translate(2px, -2px) scale(1.01);}
+  95% { transform: translate(0,0) scale(1);}
+}
+
+/* INDEX HEADER */
+
+
+/* PAGE LAYOUT */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  background: #071d2b;
+  color: #2008ba;
+  border-radius: 0;
+}
+h1 {
+  margin: 0;
+}
+
+/* SERVICES PAGE */
+.services-header-title{
+  color: #59459f;
+background:black;
+}
+.services-bg {
+  background: url('https://th.bing.com/th/id/R.8b0219bd4460b7a6ee2b1abb76e7b274?rik=yyPzPwjaH%2bshVg&riu=http%3a%2f%2fcdn.wallpapersafari.com%2f5%2f72%2fYzmGEX.jpg&ehk=piM%2f%2f3IfHqfdSZF8dLb2rKtut1gS1zUWETjRLzEhhgo%3d&risl=&pid=ImgRaw&r=0') no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+}
+.services-container {
+  max-width: 600px;
+  margin: 0 auto;
+  width: 100%;
+}
+.services-list {
+  list-style: none;
+  padding: 0;
+  margin: 32px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.service-oval {
+  position: relative;
+  display: inline-block;
+  padding: 16px;
+  margin: 8px 0;
+  border: 2px solid #46359d;
+  border-radius: 50px;
+  width: calc(100% - 32px);
+  max-width: 500px;
+  transition: transform 0.2s;
+  background-color: #0c0c0c;
+}
+.service-oval:hover {
+  transform: scale(1.02);
+}
+.service-title,
+.service-desc {
+  text-align: center;
+}
+.service-title {
+  cursor: pointer;
+  color: #59459f;
+  font-weight: bold;
+  margin-bottom: 3.2px;
+  transition: color 0.2s;
+}
+.service-title:hover {
+  color: #2b286e;
+}
+.service-desc {
+  display: none;
+  margin-bottom: 16px;
+  color: #211f79;
+  font-size: 1rem;
+  padding-left: 16px;
+}
+.service-desc.active {
+  display: block;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  margin-top: 120px;
+}
+
+/* PAYMENT PAGE */
+
+.payment-bg {
+  background: linear-gradient(135deg, #0f2027 0%, #2c5364 100%);
+  min-height: 100vh;
+}
+.header {
+  padding: 25px 20px;
+  background: #071d2b;
+  display:flex;
+  justify-content: space-between;
+  align-items:center;
+
+}
+.header-logo .logo-text {
+  font-size: 15px;
+  font-weight: bold;
+  color: #ccccd1;
+  letter-spacing: 2px;
+}
+.circle-text {
+  width: 40px;
+  height: 40px;
+  background: #050505;
+  color: #3643b7;
+  border-radius: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 20px;
+  font-family:'Brush Script MT', 'Segoe Script', cursive;
+  font-style:italic;
+}
+.header-buttons {
+  margin-top: 0px;
+  display:flex;
+  gap:12px;
+}
+
+.payment-bg .service-oval {
+  border: 2px solid #6c59e2;
+  background: white;
+  color: #fff;
+  box-shadow: 0 0 12px #6c59e2;
+}
+.payment-bg .service-oval strong {
+  color: #6c59e2;
+}
+
+/* FAKE ADS (used on Payment) */
+.fake-ad {
+  position: fixed;
+  top: 180px;
+  width: 270px;
+  background: #1a1833;
+  border: 2px dashed #6c59e2;
+  border-radius: 11.2px;
+  color: #fff;
+  padding: 16px 24px;
+  text-align: center;
+  box-shadow: 0 0 10px #6c59e2;
+  z-index: 100;
+}
+.fake-ad-left {
+  left: 30px;
+}
+.fake-ad-right {
+  right: 30px;
+}
+@media (max-width: 900px) {
+  .fake-ad {
+    position: static;
+    width: 90%;
+    margin: 16px auto;
+    box-shadow: none;
+  }
+  .fake-ad-left, .fake-ad-right {
+    left: auto;
+    right: auto;
+  }
+}
+button{
+    background: #6c59e2;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+button:hover {
+    background: #5a4ac1;
+}

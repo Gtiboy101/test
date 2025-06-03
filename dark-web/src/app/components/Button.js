@@ -1,11 +1,10 @@
-export default function Button({ href = null, children, classNameProp="", title }) {
-  const classNames =
-    'px-6 py-4 bg-indigo-100 hover:bg-indigo-200 active:bg-indigo-300 shadow-md transition-all cursor-pointer border-0 rounded-md ${ClassNameProp}'
-  return href ? (
-<a href={href} className={classNames}>
-      {children}
-    </a>
-  ) : (
-    <button className={classNames}>{children}</button>
-  )
-}
+import React from 'react';
+
+// Reusable Button component for use in Header and elsewhere
+const Button = ({ children, onClick, className = "", ...props }) => (
+  <button onClick={onClick} className={className} {...props}>
+    {children}
+  </button>
+);
+
+export default Button;
