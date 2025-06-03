@@ -37,13 +37,13 @@ const Whoweare = () => (
         </div>
         <div style={{ flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
           <p>
-            We are the unseen force lurking in encrypted corridors, slipping through firewalls like whispers in the dark. We are the ghost in the machine, the glitch in your system, the riddle you can't solve.
+            We are the unseen force lurking in encrypted corridors, slipping through firewalls like whispers in the dark. We are the ghost in the machine, the glitch in your system, the riddle you cannot solve.
           </p>
           <p>
             We answer to no one—no leaders, no orders, no rules beyond the ones we rewrite. Surveillance crumbles at our fingertips, secrets unravel in our wake, and control is nothing more than an illusion we love to shatter.
           </p>
           <p>
-            We don’t just exist in the deep web—we haunt it. We leave behind scrambled fragments, distorted messages, and echoes that vanish before you can grasp them. Chase us, and you’ll find only shadows.
+            We do not just exist in the deep web—we haunt it. We leave behind scrambled fragments, distorted messages, and echoes that vanish before you can grasp them. Chase us, and you will find only shadows.
           </p>
           <p>
             Order fears us. Authority hunts us. But shadows never stay still.
